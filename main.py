@@ -48,7 +48,7 @@ class PassGen(QMainWindow):
         return charsets.master_chset.count()
 
     def pick_char(self):
-        gen_char = charsets.master_chset.composition[random.randrange(0, charsets.master_chset.count() - 1)]
+        gen_char = charsets.master_chset.composition[random.randrange(0, charsets.master_chset.count())]
         return gen_char
 
     def create_pass(self):
